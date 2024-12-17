@@ -14,10 +14,13 @@ user1.addToCart(produto2);
 
 console.log(user1);
 
-user1.removeFromCart(produto2);
-console.log(user1);
-
 produto1.addComment("Comentário do produto", user1);
 produto1.showComments();
 produto1.show();
 user1.showProducts();
+produto1.addAvaliacoes(5, user1);
+produto1.addAvaliacoes(5, user1);
+produto1.addAvaliacoes(2, user2);
+produto1.addAvaliacoes(4, user2);
+produto1.showAvaliacoes();
+produto1.show();
