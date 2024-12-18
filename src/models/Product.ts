@@ -71,7 +71,13 @@ export class Product {
         `Avaliação de ${avaliacao.from.userName} - ${avaliacao.avaliacao}`
       );
     });
-    console.log(`Media das avaliações: ${mediaAvaliacoes / numUserAvaliacoes}`);
+    if (produtosAvaliacoes.length != 0) {
+      console.log(
+        `Media das avaliações: ${mediaAvaliacoes / numUserAvaliacoes}`
+      );
+    } else {
+      console.log(`Media das avaliações: Sem avaliações para este produto`);
+    }
   }
 
   show() {

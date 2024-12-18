@@ -60,6 +60,6 @@ export class User {
       total += product.value;
     });
 
-    console.log(`Total: R$ ${total.toFixed(2)}`);
+    console.log(`Total: R$${total.toFixed(2)}`);
   }
 }
